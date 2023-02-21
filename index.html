@@ -5,10 +5,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="icon" href="/images/favicon-32.png" sizes="32x32">
-    <link rel="icon" href="/images/favicon-128.png" sizes="128x128">
-    <link rel="icon" href="/images/favicon-180.png" sizes="180x180">
-    <link rel="icon" href="/images/favicon-192.png" sizes="192x192">
+    <link rel="icon" href="images/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="images/favicon-128.png" sizes="128x128">
+    <link rel="icon" href="images/favicon-180.png" sizes="180x180">
+    <link rel="icon" href="images/favicon-192.png" sizes="192x192">
+    <meta name="description" content="An exciting week for thinky games with 6 new games releasing - join our giveaway to win free copies!" />
+    <link rel="canonical" href="https://thinkathon.thinkygames.com/" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Thinkathon - 1 week, 6 new thinky games!" />
+    <meta property="og:description" content="An exciting week for thinky games with 6 new games releasing - join our giveaway to win free copies!" />
+    <meta property="og:url" content="https://thinkathon.thinkygames.com/" />
+    <meta property="og:site_name" content="Thinky Games Thinkathon" />
+    <meta property="og:image" content="https://thinkathon.thinkygames.com/images/cover.png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="640" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@thinky_games" />
     <style>
 * {
   margin: 0;
@@ -20,16 +34,381 @@ body {
   font-family: 'Quicksand', sans-serif;
   text-align: center;
   background-color: #ffcf00;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body > div {
+  overflow: auto;
+}
+
+body > div:nth-child(2) {
+  background-image: url(images/background.png);
+  background-size: 100% auto;
+}
+
+body > div > div {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  overflow: auto;
+  padding: 2rem;
+}
+
+footer a {
+  color: #fff;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+a {
+  color: #000;
 }
 
 h1 {
   font-size: 6rem;
+  margin: 2rem 0 0 0;
+}
+
+h1 img {
+  display: block;
+  width: 100%;
+}
+
+p.subtitle {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+h2 {
+  margin: 1rem;
+}
+
+input {
+  outline: none;
+}
+
+fieldset {
+  border: none;
+}
+
+input.email {
+  width: 100%;
+  max-width: 20rem;
+  padding: 8px 24px;
+  font-size: 1rem;
+  line-height: 2;
+  background-color: #fff;
+  border: none;
+  border-radius: 40px 0 0 40px;
+}
+
+input.button {
+  padding: 8px 24px;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 2;
+  background-color: #000;
+  border: none;
+  border-radius: 0 40px 40px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+input.button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+form {
+  width: 100%;
+  max-width: 40rem;
+  margin: 1rem auto 3rem auto;
+}
+
+.additional {
+  background-color: #000;
+  color: #fff;
+}
+
+.additional a {
+  color: #fff;
+}
+
+a.button {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 8px 28px;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 2;
+  background-color: #000;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none
+}
+
+a.button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.giveaway-intro {
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
+.mc-field-group {
+  margin: 1rem;
+}
+
+.gdprRequired {
+  margin: 0 auto;
+}
+
+.footnote {
+  font-size: 0.8rem;
+}
+
+.day {
   margin: 2rem 0;
+  padding: 1.5rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 16px;
+}
+
+.day h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.day p {
+  margin: 0 auto 2rem auto;
+  max-width: 500px;
+}
+
+.day a {
+  color: #fff;
+}
+
+.game {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.sm-links {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+.sm-links li {
+  display: inline-block;
+}
+
+.sm-links img {
+  margin: 0 1rem;
+  width: 4rem;
+}
+
+.section {
+  padding: 1rem 0;
+}
+
+.section > p {
+  max-width: 40rem;
+  margin: 1rem auto;
+}
+
+.section.tandc ol {
+  text-align: left
+}
+
+h2.date-header {
+  margin-bottom: 0;
+}
+
+p.date {
+  margin-top: 0;
+}
+
+.steam-button {
+  display: flex;
+  width: fit-content;
+  margin: 2rem auto 1rem auto;
+  padding: 12px 16px;
+  background: linear-gradient(180deg, #2b3647, #1c232d);
+  border-radius: 20px;
+  text-decoration: none;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.steam-button img {
+  width: 2rem;
+  margin-right: 0.8rem;
+  flex-grow: 0;
+  flex-basis: 1;
 }
     </style>
   </head>
   <body>
-    <h1>Thinkathon</h1>
-    <p>Coming soon. Shh, don't tell anyone.</p>
+    <div>
+      <div>
+        <h1><img src="images/title.png" alt="Thinkathon"></h1>
+        <p class="subtitle">1 week, 6 new thinky games!</p>
+      </div>
+    </div>
+    <div id="giveaway-signup">
+      <div>
+        <div id="mc_embed_signup">
+          <form action="https://thinkygames.us1.list-manage.com/subscribe/post?u=f36952ed823d7e13d92f30be1&amp;id=f488399d32&amp;v_id=3489&amp;f_id=007572e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
+            <div id="mc_embed_signup_scroll">
+              <p class="giveaway-intro">We're giving away <b>5 free copies of each game</b> to subscribers of our Thinky Games Club newsletter! Sign up for a chance to win!</p>
+              <div class="mc-field-group">
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required placeholder="Your email address"><input type="submit" value="≫" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </div>
+              <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
+                <div class="content__gdpr">
+                  <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+                    <label class="checkbox subfield" for="gdpr_59050"><input type="checkbox" id="gdpr_59050" name="gdpr[59050]" value="Y" class="av-checkbox gdpr"> <span>I agree to subscribe to the Thinky Games Club newsletter by email</span> </label>
+                  </fieldset>
+                </div>
+              </div>
+              <div hidden="true"><input type="hidden" name="tags" value="5714961"></div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f36952ed823d7e13d92f30be1_f488399d32" tabindex="-1" value=""></div>
+              <p class="footnote">See the <a href="#tandc">terms & conditions</a> for more details. You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please see our <a href="https://thinkygames.com/privacy-policy">Privacy Policy</a>.</p>
+            </div>
+          </form>
+        </div>
+        <h2 class="date-header">Tuesday</h2>
+        <p class="date">28th February</p>
+        <div class="day">
+          <div class="game">
+            <h3>Rytmos</h3>
+            <p>A relaxing puzzle game where you create music by solving mazes. Travel from planet to planet and discover new music. Jam on top of the music from the planet with a great selection of 20+ fun unlock-able musical toys.</p>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/svntd5NKpkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p><a href="https://store.steampowered.com/app/1634220/Rytmos/" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
+          </div>
+        </div>
+        <h2 class="date-header">Wednesday</h2>
+        <p class="date">1st March</p>
+        <div class="day">
+          <div class="game">
+            <h3>Konkan Coast Pirate Solutions</h3>
+            <p>A cozy puzzle game about helping pirate ships do pirate things. Set up the simulations. Watch how the ships behave. Explore how the systems interact.</p>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MIJsIesTMQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p><a href="https://store.steampowered.com/app/2156410/Konkan_Coast_Pirate_Solutions/" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
+          </div>
+        </div>
+        <div class="day">
+          <div class="game">
+            <h3>Alephant</h3>
+            <p>A word-less abstract puzzle game about language.</p>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QOLS4nsay2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p><a href="https://store.steampowered.com/app/1823730/Alephant/" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
+          </div>
+        </div>
+        <h2 class="date-header">Thursday</h2>
+        <p class="date">2nd March</p>
+        <div class="day">
+          <div class="game">
+            <h3>Stuffo the Puzzle Bot</h3>
+            <p>A laid-back but smart puzzle game. Stuffo is the last remaining puzzle bot stuck in a world filled with bite-sized brain-teasers. Help Stuffo to solve the mind-bending puzzles by using various blocks to climb, push and teleport your way to the exit.</p>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JB2q95nAP9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p><a href="https://store.steampowered.com/app/1068460/Stuffo_the_Puzzle_Bot/" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
+          </div>
+        </div>
+        <div class="day">
+          <div class="game">
+            <h3>Bonfire Peaks - Lost Memories</h3>
+            <p>Get ready to fan those embers and rekindle the campfires in Bonfire Peaks: Lost Memories, a 3-part DLC for the critically beloved puzzle game.</p>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/C4aYKw0ae2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p><a href="https://store.steampowered.com/app/2008250/Bonfire_Peaks__Lost_Memories/" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
+          </div>
+        </div>
+        <h2 class="date-header">Friday</h2>
+        <p class="date">3rd March</p>
+        <div class="day">
+          <div class="game">
+            <h3>SokoChess White</h3>
+            <p>SokoChess White is a puzzle game about pushing Chess pieces into their destination and overcoming various obstacles. Enjoy 70 different handcrafted levels with a unique twist on the Chess formula.</p>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/W3f1NlDXXL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p><a href="https://store.steampowered.com/app/2185860/SokoChess_White/" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
+          </div>
+        </div>
+        <p><a href="#giveaway-signup" class="button">Enter the giveaway</a></p>
+        <div class="section">
+          <h2>Join the Thinky Games community!</h2>
+          <p>If these games are your kind of jam, we've got you covered. <a href="#">Join fellow thinky fans on our Discord</a> or <a href="#">follow us on Twitter</a> to keep up with the latest thinky news.</p>
+          <ul class="sm-links">
+            <li>
+              <a href="https://discord.gg/EtwnEMuyyT" target="_blank">
+                <img src="https://thinkygames.com/wp-content/themes/wme/images/icons/discord-icon-k.svg" alt="Discord server">
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/thinky_games" target="_blank">
+                <img src="https://thinkygames.com/wp-content/themes/wme/images/icons/twitter-icon-k.svg" alt="Twitter feed">
+              </a>
+            </li>
+            <li>
+              <a href="https://twitch.tv/thinkygames" target="_blank">
+                <img src="https://thinkygames.com/wp-content/themes/wme/images/icons/twitch-icon-k.svg" alt="Twitch channel">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@thinkygames" target="_blank">
+                <img src="https://thinkygames.com/wp-content/themes/wme/images/icons/youtube-icon-k.svg" alt="YouTube channel">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="additional">
+      <div>
+        <div class="section">
+          <h2>Press and content creators</h2>
+          <p>If you're a member of the press or a content creator and would like to cover the Thinkathon or any of the games that are participating in the event, please get in touch at <a href="mailto:thinkathon@thinkygames.com">thinkathon@thinkygames.com</a>.</p>
+        </div>
+        <div class="section tandc" id="tandc">
+          <h2>Giveaway terms & conditions</h2>
+          <ol>
+            <li>To enter the Thinkathon giveaway, entrants must subscribe to the Thinky Games Club newsletter via the form on the <a href="https://thinkathon.thinkygames.com/">Thinkathon website</a>.</li>
+            <li>Individuals may only enter the giveaway at most once.</li>
+            <li>The duration of the Thinkathon giveaway is between 24th February 2023 and 5th March 2023.</li>
+            <li>There will be multiple prize draws throughout the duration of the Thinkathon giveaway. Winners for each draw will be selected by a random process.</li>
+            <li>Entrants are eligible for any prize draws that occur while they are subscribed to the Thinky Games Club newsletter for the duration of the Thinkathon giveaway.
+            <li>Entrants cannot win more than one prize per draw.</li>
+            <li>Winners will be contacted via the email they used to subscribe to the Thinky Games Club newsletter when entering the Thinkathon giveaway.</li>
+            <li>Winners will receive product keys that can be redeemed through the <a href="https://store.steampowered.com/about/">Steam client</a>.</li>
+            <li>ThinkyGames.com reserves the right to disqualify an entrant for breaching these terms and conditions.</li>
+            <li>By entering the Thinkathon giveaway, you agree to these terms and conditions.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>The Thinkathon is brought to you by <a href="https://thinkygames.com/">ThinkyGames.com</a></p>
+      <p>🧩 Puzzles  🤔 Curiosity  🔎 Discovery</p>
+      <p>Sponsored by <a href="https://astragames.org/">Astra Games</a></p>
+    </footer>
   </body>
 </html>
