@@ -268,6 +268,12 @@ p.date {
   flex-basis: 1;
 }
     </style>
+    <script>
+function cb(response) {
+  console.log('Logged visit')
+}
+    </script>
+    <script async src="https://api.countapi.xyz/hit/thinkathon.thinkygames.com/visits?callback=cb"></script>
   </head>
   <body>
     <div>
