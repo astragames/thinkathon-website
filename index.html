@@ -58,6 +58,12 @@ body > div > div {
   padding: 0 1rem;
 }
 
+.header {
+  background-image: url(images/headerbackground.png);
+  background-size: 100% auto;
+  background-position: center;
+}
+
 footer {
   background-color: #000;
   color: #fff;
@@ -79,7 +85,7 @@ a {
 
 h1 {
   font-size: 6rem;
-  margin: 2rem 0 0 0;
+  margin: 5rem 1rem 2rem 1rem;
 }
 
 h1 img {
@@ -88,10 +94,14 @@ h1 img {
 }
 
 p.subtitle {
-  margin: 0 0 1rem 0;
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 0.9rem 1.5rem;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1;
+  background-color: #ffcf00;
+  box-shadow: 3px 3px #000;
 }
 
 h2 {
@@ -273,17 +283,18 @@ function cb(response) {
   console.log('Logged visit')
 }
     </script>
-    <script async src="https://api.countapi.xyz/hit/thinkathon.thinkygames.com/visits?callback=cb"></script>
+<!--    <script async src="https://api.countapi.xyz/hit/thinkathon.thinkygames.com/visits?callback=cb"></script>-->
   </head>
   <body>
-    <div>
+    <div class="header">
       <div>
-        <h1><img src="images/title.png" alt="Thinkathon"></h1>
-        <p class="subtitle">1 week, 6 new thinky games!</p>
+        <h1><img src="images/logooverlay.png" alt="Thinkathon"></h1>
+        <p class="subtitle">1 week, 6 new thinky games</p>
       </div>
     </div>
-    <div id="giveaway-signup">
-      <div>
+    <div>
+      <div id="giveaway-signup">
+        <h2>Join the giveaway!</h2>
         <div id="mc_embed_signup">
           <form action="https://thinkygames.us1.list-manage.com/subscribe/post?u=f36952ed823d7e13d92f30be1&amp;id=f488399d32&amp;v_id=3489&amp;f_id=007572e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
             <div id="mc_embed_signup_scroll">
