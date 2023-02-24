@@ -134,6 +134,7 @@ input.email {
 }
 
 input.button {
+  -webkit-appearance: none;
   flex-grow: 0;
   padding: 8px 24px;
   color: #fff;
@@ -255,7 +256,8 @@ a.button:hover {
 }
 
 .section.tandc ol {
-  text-align: left
+  text-align: left;
+  margin: 0 1rem;
 }
 
 h2.date-header {
@@ -276,6 +278,7 @@ p.date {
   text-decoration: none;
   vertical-align: middle;
   align-items: center;
+  color: #fff;
 }
 
 .steam-button img {
@@ -310,11 +313,26 @@ p.intro {
 }
     </style>
     <script>
-function cb(response) {
-  console.log('Logged visit')
+window.onload = function () {
+  console.log('Counting visit')
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://api.countapi.xyz/hit/thinkathon.thinkygames.com/visits');
+  xhr.responseType = "json";
+  xhr.send();
+
+  var queryParams = new URLSearchParams(window.location.search);
+  var utmCampaign = queryParams.get('utm_campaign');
+  if (utmCampaign === 'thinkathon') {
+    var utmMedium = queryParams.get('utm_medium');
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://api.countapi.xyz/hit/thinkathon.thinkygames.com/visits_' + encodeURIComponent(utmMedium));
+    xhr.responseType = "json";
+    xhr.send();
+  }
+  console.log('Counted')
 }
     </script>
-<!--    <script async src="https://api.countapi.xyz/hit/thinkathon.thinkygames.com/visits?callback=cb"></script>-->
   </head>
   <body>
     <div class="header">
@@ -351,6 +369,7 @@ function cb(response) {
             </div>
           </form>
         </div>
+        <p style="margin-bottom: 2rem"><a href="https://store.steampowered.com/curator/40848570/sale/Thinkathon" class="steam-button"><img src="images/steamicon.png" alt=""> See all games on Steam</a></p>
         <h2 class="date-header">Tuesday</h2>
         <p class="date">28th February</p>
         <div class="day">
@@ -362,7 +381,7 @@ function cb(response) {
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/svntd5NKpkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
-            <p><a href="https://store.steampowered.com/app/1634220/Rytmos/" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
+            <p><a href="https://store.steampowered.com/app/1634220/Rytmos/?utm_source=thinkygames&utm_campaign=thinkathon&utm_medium=landingpage" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
           </div>
         </div>
         <h2 class="date-header">Wednesday</h2>
@@ -376,7 +395,7 @@ function cb(response) {
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MIJsIesTMQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
-            <p><a href="https://store.steampowered.com/app/2156410/Konkan_Coast_Pirate_Solutions/" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
+            <p><a href="https://store.steampowered.com/app/2156410/Konkan_Coast_Pirate_Solutions/?utm_source=thinkygames&utm_campaign=thinkathon&utm_medium=landingpage" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
           </div>
         </div>
         <div class="day">
@@ -388,7 +407,7 @@ function cb(response) {
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QOLS4nsay2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
-            <p><a href="https://store.steampowered.com/app/1823730/Alephant/" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
+            <p><a href="https://store.steampowered.com/app/1823730/Alephant/?utm_source=thinkygames&utm_campaign=thinkathon&utm_medium=landingpage" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
           </div>
         </div>
         <h2 class="date-header">Thursday</h2>
@@ -402,7 +421,7 @@ function cb(response) {
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JB2q95nAP9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
-            <p><a href="https://store.steampowered.com/app/1068460/Stuffo_the_Puzzle_Bot/" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
+            <p><a href="https://store.steampowered.com/app/1068460/Stuffo_the_Puzzle_Bot/?utm_source=thinkygames&utm_campaign=thinkathon&utm_medium=landingpage" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
           </div>
         </div>
         <div class="day">
@@ -414,7 +433,7 @@ function cb(response) {
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/C4aYKw0ae2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
-            <p><a href="https://store.steampowered.com/app/2008250/Bonfire_Peaks__Lost_Memories/" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
+            <p><a href="https://store.steampowered.com/app/2008250/Bonfire_Peaks__Lost_Memories/?utm_source=thinkygames&utm_campaign=thinkathon&utm_medium=landingpage" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
           </div>
         </div>
         <h2 class="date-header">Friday</h2>
@@ -428,12 +447,12 @@ function cb(response) {
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/W3f1NlDXXL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
-            <p><a href="https://store.steampowered.com/app/2185860/SokoChess_White/" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
+            <p><a href="https://store.steampowered.com/app/2185860/SokoChess_White/?utm_source=thinkygames&utm_campaign=thinkathon&utm_medium=landingpage" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
           </div>
         </div>
         <div class="section">
           <h2>Join the Thinky Games community!</h2>
-          <p>If these games are your kind of jam, we've got you covered. <a href="#">Join fellow thinky fans on our Discord</a> or <a href="#">follow us on Twitter</a> to keep up with the latest thinky news.</p>
+          <p>If these games are your kind of jam, we've got you covered. <a href="https://thinkygames.com/discord">Join fellow thinky fans on our Discord</a> or <a href="https://twitter.com/thinky_games">follow us on Twitter</a> to keep up with the latest thinky news.</p>
           <ul class="sm-links">
             <li>
               <a href="https://discord.gg/EtwnEMuyyT" target="_blank">
@@ -463,7 +482,8 @@ function cb(response) {
       <div>
         <div class="section">
           <h2>Press and content creators</h2>
-          <p>If you're a member of the press or a content creator and would like to cover the Thinkathon or any of the games that are participating in the event, please get in touch at <a href="mailto:thinkathon@thinkygames.com">thinkathon@thinkygames.com</a>.</p>
+          <p>If you're a member of the press or a content creator and would like to cover the Thinkathon or any of the games that are participating in the event, please get in touch via our <a href="https://forms.gle/nkEgQkEU54QiAwGYA">contact form</a>.</p>
+          <p><a href="https://drive.google.com/drive/folders/1ktyQefZ3teCS0UjU7I1s3DqP0BRJ90xd?usp=sharing">Press Kit</a></p>
         </div>
         <div class="section tandc" id="tandc">
           <h2>Giveaway terms & conditions</h2>
