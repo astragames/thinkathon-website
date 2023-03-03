@@ -385,12 +385,6 @@ function updateCountdowns() {
 }
 
 window.onload = function () {
-  updateCountdowns();
-  setInterval(function () {
-    console.log('update')
-    updateCountdowns();
-  }, 1000);
-
   console.log('Counting visit')
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://api.countapi.xyz/hit/thinkathon.thinkygames.com/visits');
@@ -425,8 +419,7 @@ window.onload = function () {
         <div id="mc_embed_signup">
           <form action="https://thinkygames.us1.list-manage.com/subscribe/post?u=f36952ed823d7e13d92f30be1&amp;id=f488399d32&amp;v_id=3489&amp;f_id=007572e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
             <div id="mc_embed_signup_scroll">
-              <p class="giveaway-intro">We're giving away <b>5 free copies of each game</b> to subscribers of our Thinky&nbsp;Games&nbsp;Club newsletter! Sign up for a chance to win!</p>
-              <p>Winners have been selected for the Rytmos, Alephant, Konkan Coast Pirate Solutions, Stufo the Puzzle Bot, and Bonfire Peaks DLC draws - there is still chance to win a copy of SokoChess White! The Brilliant Boxes Bundle is not included in the giveaway.</p>
+              <p class="giveaway-intro">All winners of individual games have been selected - however, we're running a <b>bonus draw</b>! On Sunday 5th March, we'll select 1 lucky subscriber to win a copy of <em>all Thinkathon games</em>. The Brilliant Boxes Bundle is not included in the giveaway.</p>
               <div class="mc-field-group form-fields">
                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required placeholder="Your email address"><input type="submit" value="≫" name="subscribe" id="mc-embedded-subscribe" class="button">
               </div>
@@ -525,7 +518,7 @@ window.onload = function () {
             <p>A unique puzzle adventure game where you explore a fascinating world trapped inside a mysterious cube.<br>A mind-bending recursive puzzle game about boxes within boxes within boxes within boxes.<br>A beautiful voxel art puzzle game about setting your belongings on fire.<br>A puzzle game where the rooms are items and the items are rooms.</p>
             <div class="video-container">
               <div>
-                <a href="#"><img src="images/bbb.png"></a>
+                <a href="https://store.steampowered.com/bundle/29913/Brilliant_Boxes_Bundle/?utm_source=thinkygames&utm_campaign=thinkathon&utm_medium=landingpage"><img src="images/bbb.png"></a>
               </div>
             </div>
             <div class="countdown"><span>Out now!</span></div>
@@ -543,8 +536,8 @@ window.onload = function () {
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/W3f1NlDXXL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
-            <div class="countdown" id="countdown-5"></div>
-            <p><a href="https://store.steampowered.com/app/2185860/SokoChess_White/?utm_source=thinkygames&utm_campaign=thinkathon&utm_medium=landingpage" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Wishlist on Steam</span></a></p>
+            <div class="countdown"><span>Out now!</span></div>
+            <p><a href="https://store.steampowered.com/app/2185860/SokoChess_White/?utm_source=thinkygames&utm_campaign=thinkathon&utm_medium=landingpage" target="_blank" class="steam-button"><img src="images/steamicon.png" alt=""> <span>Buy on Steam</span></a></p>
           </div>
         </div>
         <div class="section">
